@@ -1,5 +1,6 @@
 # Git 版本控制系統？那是什麼東西，可以吃嗎？<br />Let's Go Git
 一個可食用的 Git 版本控制系統教學  
+An edible Git version control system tutorial  
 <https://github.com/Vdragon/Let_s_Go_Git>
 
 ## 本 GitBook 的智慧財產授權條款<br />Intellectual Property License of This GitBook
