@@ -1,6 +1,6 @@
-# Let's Go Git
+# Hello Git World!
 An edible Git version control system tutorial  
-<https://github.com/Vdragon/Let_s_Go_Git>
+<https://github.com/Vdragon/Hello_Git_World_>
 
 ## Intellectual property license of this GitBook
 Creative Commons BY-SA 3.0 or later

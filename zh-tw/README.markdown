@@ -1,6 +1,6 @@
-# Git 版本控制系統？那是什麼東西，可以吃嗎？
+# Git 版本控制系統世界哈囉！<br >Hello Git world!
 一個可食用的 Git 版本控制系統教學  
-<https://github.com/Vdragon/Let_s_Go_Git>
+<https://github.com/Vdragon/Hello_Git_World_>
 
 ## 本 GitBook 採用的智慧財產授權條款
 本書採用 [Creative Commons 姓名標示-相同方式分享第 3.0](https://creativecommons.org/licenses/by-sa/3.0/tw/) 或其任意更近期版本授權條款釋出供所有人於授權範圍內自由使用。
