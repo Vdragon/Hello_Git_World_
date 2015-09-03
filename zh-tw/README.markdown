@@ -3,7 +3,7 @@
 <https://github.com/Vdragon/Hello_Git_World_>
 
 ## 本 GitBook 採用的智慧財產授權條款
-本書採用 [Creative Commons 姓名標示-相同方式分享第 3.0](https://creativecommons.org/licenses/by-sa/3.0/tw/) 或其任意更近期版本授權條款釋出供所有人於授權範圍內自由使用。
+本書採用 [Creative Commons 姓名標示-相同方式分享第 3.0 或其任意更近期版本授權條款](https://creativecommons.org/licenses/by-sa/3.0/tw/)釋出供所有人於授權範圍內自由使用。
 
 ## 如何對本 GitBook 做出貢獻
 ### 回報問題與改善建議
