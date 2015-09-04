@@ -7,7 +7,7 @@
 
 ## 如何對本作品做出貢獻
 ### 回報問題與改善建議
-發現問題或是有改善本 GitBook 的建議的話請到[本 GitBook 的問題追蹤系統(issue tracker)](../../issues)建檔回報
+發現問題或是有改善本 GitBook 的建議的話請到[本 GitBook 的議題追蹤系統(issue tracker)](../../issues)建檔回報
 
 ### 貢獻本作品內容
 要貢獻內容的話歡迎[建立分支版本倉庫](https://github.com/Vdragon/Hello_Git_World_/fork)，建立並切換至一個新的 Git 分支(branch)完成編輯後提交(commit)為一個新版本，推送(push)到您的 GitHub 遠端版本倉庫再跟我們[建檔拉取請求(pull request)](https://github.com/Vdragon/Hello_Git_World_/pull/new)
