@@ -84,7 +84,7 @@
 
 ……
 
-<span style='font-size:1000%'>懶</span>
+<span style='font-size:1000%'>懶</span>  
 ![影片對白：「別浪費時間，快來吧」](資源/別浪費時間，快來吧.png)
 
 ## 救星：Git - The Stupid Content Tracker（以及其他眾多的版本控制系統，不過我們這本書只有介紹 Git）
