@@ -50,6 +50,6 @@ $ git config --global user.email Vdragon.Taiwan@gmail.com
 ## 將內容變更移入版本提交準備區域(staging area)
 ### 僅將檔案部份內容變更移入版本提交準備區域(staging area)
 
-### 將版本提交準備區域內的內容變更提交至版本倉庫中為一個新的版本(git commit)
+## 將版本提交準備區域內的內容變更提交至版本倉庫中為一個新的版本(git commit)
 
-### 為版本提交署名
+## 為版本提交署名
