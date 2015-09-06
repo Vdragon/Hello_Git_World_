@@ -105,11 +105,60 @@ $ git config --global user.name "Ｖ字龍(Vdragon Taiwan)"
 $ git config --global user.email Vdragon.Taiwan@gmail.com
 ```
 
-## 初始化 Git 版本倉庫
+## 初始化 Git 版本倉庫(version repository)
+現在我們已經準備好把版本倉庫(version repository)建起來了，請開啟一個終端機(terminal)，然後將當前工作目錄(current working directory)切換到您想要進行版本控制的內容(content)的根目錄（我們這裡假定是 `/home/user/workspace/my_content`），然後執行下列命令：
+`````
+/home/user/workspace/my_content $ git init
+Initialized empty Git repository in /home/user/workspace/my_content/.git/
+`````
+輸出訊息會告訴您它於您的內容(content)的根目錄底下的 `.git` 目錄初始化了一個空的 Git 版本倉庫
+
+要注意的是於類 Unix 作業系統中以英式句點(.)開頭的目錄或檔案皆為*隱藏檔*，如果您沒有發現 `.git` 目錄的存在的話請調整您的檔案管理軟體的設定值讓它顯示隱藏檔。
+
+### 劃分區域說明
+在建立了 Git 版本倉庫的當下其實您的內容(content)根目錄底下就已經悄悄地被 Git 劃分為** 3 個區域**，分別說明如下：
+
+#### 版本倉庫(version repository)（位於 `.git/` 目錄內）
+
+#### 版本提交準備區域(staging area)（又稱為 index）（位於 `.git/` 目錄內）
+這是用來準備您要提交的新版本的區域，您要將想要放進此版本提交的內容變更一一放進這裡，最後再將所有在這裡的變更提交到版本倉庫中(version repository)
+
+#### 工作目錄(working directory)（位於 `.git/` 目錄外）
+這是您編輯內容的區域，基本上包含：
+
+* 未被追蹤版本的檔案(untracked file)
+* 已被追蹤版本的檔案(tracked file)
+* 已被追蹤，且有尚未提交至提交準備區域(staging area)的變更的檔案(tracked file with unstaged changes)
+
+## 查看版本倉庫狀態
+當您的當前工作目錄(current working directory)位於您的內容根目錄底下時，您可以用 `status` Git 命令來察看目前版本倉庫的狀態，使用方式為：
+```
+$ git status
+```
+
+它會告訴您您目前在哪個分支(branch)上，版本提交區域中有哪些變更，以及工作目錄(working directory)中有哪些尚未提交到版本倉庫的變更與尚未被追蹤版本的檔案。
 
 ## 將內容變更移入版本提交準備區域(staging area)
-### 僅將檔案部份內容變更移入版本提交準備區域(staging area)
+您可以使用 `add` Git 命令將指定檔案／目錄的內容變更移入版本提交準備區域，使用方法如下：
+`````
+$ git add 〈包含內容變更的檔案／目錄路徑〉
+`````
 
-## 將版本提交準備區域內的內容變更提交至版本倉庫中為一個新的版本(git commit)
+### 僅將檔案部份內容變更移入版本提交準備區域(staging area)（實用）
+有的時候會遇到「您對同一個檔案做了許多變更，但是有一些變更您不想要放進同一個版本」的狀況，這個時候您可以使用 `--patch` `add` Git 命令參數來指定哪些變更要移進版本提交準備區域(staging area)，哪些變更不要。
 
-## 為版本提交署名
+## 將版本提交準備區域內的內容變更提交至版本倉庫中為一個新的版本
+當您準備好您的版本提交後，您就可以使用 `commit` Git 命令將所有版本提交準備區域(staging area)中的內容變更提交到版本倉庫中成為一個新的版本，使用方式如下：
+`````
+$ git commit
+`````
+
+Git 會啟動一個純文字文件編輯器讓您輸入該版本提交的標題與詳細資料，當您存檔並結束純文字編輯器後一個新的版本就提交到版本倉庫中了！
+
+### 為版本提交署名(Sign off)
+`commit` Git 命令有一個特別的參數叫作「署名(sign off)」，使用方式如下：
+`````
+$ git commit --signoff
+`````
+
+您會發現新版本提交的詳細資料區域中會多出一列「Signed-off-by: 〈您的稱謂〉 &lt;〈您的電子郵件信箱地址〉&gt;」，它的用途基本上是要您宣示您所提交的變更完全合法，不會對軟體專案造成損害（比方說將未經過授權的專有程式片段加到別人的程式中對他人造成法律威脅），有些軟體專案會只引入有「Signed-off-by: 」列的版本提交。
