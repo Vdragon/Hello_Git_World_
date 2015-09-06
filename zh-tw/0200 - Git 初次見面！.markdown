@@ -1,0 +1,55 @@
+# Git 初次見面！
+## Git 命令<br>Git commands
+Git 版本控制系統由多個大部份都在命令列介面底下執行的「Git 命令」組成，執行 Git 命令的方式為：
+```
+$ git 〈Git 命令名稱〉 （Git 命令參數）
+```
+例： `$ git help`  
+或是
+```
+$ git-〈Git 命令名稱〉（Git 命令參數）
+```
+例： `$ git-help`  
+
+這兩種下命令的方式的效果是完全等價（相同）的，本文中的內容將會使用 `$ git 〈Git 命令名稱〉` 的格式。
+
+## 初始化必要 Git 設定
+接下來我們要設定一些提交版本前一定要先設定好的東西，請依照指示進行操作。
+
+這裡我們將會用到 `config` Git 命令來修改 Git 設定值，此命令的詳細資訊將於後面的章節補完。
+
+### 設定您的稱謂與電子郵件信箱地址（此設定值設定好後才能提交新版本）
+於 Git 版本控制系統中每個版本都跟建立該版本的人的「身份」連結在一起，「身份」包含該人的稱謂（建議但不一定要是您的真名）跟電子郵件信箱地址。
+
+於 Git 中通常您的身份會以 [RFC5322](https://tools.ietf.org/html/rfc5322) 規範的格式顯示，比方說
+```
+"Ｖ字龍(Vdragon)" <Vdragon.Taiwan@gmail.com>
+```
+
+使用下列命令設定您的稱謂跟電子郵件信箱地址
+```
+$ git config --global user.name 〈您在 Git 中要使用的稱謂（如果內容包含空白字元的話整個參數要用引號括住才不會被殼程式錯誤地解釋為是兩個分開的參數）〉
+$ git config --global user.email 〈您的電子郵件信箱地址〉
+```
+
+比方說要設定
+
+```
+Ｖ字龍(Vdragon Taiwan) <Vdragon.Taiwan@gmail.com>
+```
+
+的身份的話就執行
+
+```
+$ git config --global user.name "Ｖ字龍(Vdragon Taiwan)"
+$ git config --global user.email Vdragon.Taiwan@gmail.com
+```
+
+## 初始化 Git 版本倉庫
+
+## 將內容變更移入版本提交準備區域(staging area)
+### 僅將檔案部份內容變更移入版本提交準備區域(staging area)
+
+### 將版本提交準備區域內的內容變更提交至版本倉庫中為一個新的版本(git commit)
+
+### 為版本提交署名
