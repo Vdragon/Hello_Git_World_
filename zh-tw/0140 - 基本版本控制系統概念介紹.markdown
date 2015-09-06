@@ -1,8 +1,8 @@
 # 基本版本控制系統概念介紹
-## 內容(Content)
+## 內容(content)
 顧名思義，內容就是您的某個工作的內容（如果是軟體開發的話就是軟體的來源程式碼(source code)，如果是寫一本書的話就是書的內容）。
 
-## 版本(Version)
+## 版本(version)
 版本(version)為您對 內容(content) 的特定狀態所取名的識別名稱，如：  
 ![Retext 關於視窗畫面擷取圖案](資源/關於-ReText.png "ReText 關於視窗畫面擷取圖案")
 
@@ -10,13 +10,13 @@
 
 <http://semver.org/lang/zh-TW/>
 
-## 內容差異(Content Diff(erence))
+## 內容差異((content) diff(erence))
 然而對我們來說版本叫作什麼並沒有多大的意義，我們反倒通常對「兩個不同的版本之間內容到底變了什麼」比較感興趣，這就是「內容差異（difference，常簡稱為 diff）」，比方說：
 
 * （相對於 0.1 版本，）ReText 0.2 版本修正了某些情況下啟動會發生程式崩潰的問題。
 * 這本書的第二版只新增了「作者的話」章節，由於這個章節對我來說沒什麼用所以我只要買第一版就好了。
 
-## 版本控制(Version Controlling)
+## 版本控制(version controlling)
 顧名思義，企圖控制好你的內容的各個不同的版本（跟他們的的內容變更），讓您在某些問題中可以得到方便就是版本控制，比方說：
 
 * 這個程式在第 0.2 版本的時候被我改到爛掉了，但是我還有第 0.1 版本的內容備份，此時我至少可以做兩件事解決這個問題：
@@ -43,8 +43,8 @@
 * [Git](https://git-scm.com/)
 * [Bazaar](http://bazaar.canonical.com/)
 
-## 版本倉庫(Version repository)
+## 版本倉庫(version repository)
 顧名思義，版本倉庫就是保存所有版本的場所，只要沒有動到版本倉庫您過去提交進版本倉庫的版本就不會不見。
 
-## 版本追蹤(Version Tracking)
+## 版本追蹤(version Tracking)
 顧名思義，被版本控制系統管理的內容(content)我們稱其正在被版本控制系統追蹤(track)其版本(version)
