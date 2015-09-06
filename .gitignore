@@ -1,3 +1,6 @@
 # Git 版本追蹤忽略規則
-## 忽略 GitBook 建構目錄
+## 忽略 GitBook Web 版本電子書建構目錄
 _book/
+
+## 忽略所有 GitBook 建構的 PDF 版本電子書
+*.pdf
