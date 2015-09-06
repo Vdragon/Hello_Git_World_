@@ -1,6 +1,6 @@
 # Git 版本控制系統世界哈囉！<br >Hello Git world!
 一個可食用的 Git 版本控制系統教學  
-<https://github.com/Vdragon/Hello_Git_World_>
+<http://vdragon.gitbooks.io/hello_git_world_>
 
 ## 本作品採用的智慧財產授權條款
 除了另外聲明之內容以外，本作品之內容採用「創用 CC-<span class="important_warning" style="color: red">**BY**</span>-<span class="important_warning" style="color: red">**SA**</span> 3.0 台灣地區版本或其後版本」授權條款釋出供所有人使用。  
