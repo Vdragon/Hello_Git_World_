@@ -2,8 +2,8 @@
 ## 內容<br>Content
 顧名思義，內容就是您的某個工作的內容（如果是軟體開發的話就是軟體的來源程式碼(source code)，如果是寫一本書的話就是書的內容）。
 
-## 版本<br>Version/Revision(?)
-版本(version/revision)為您對 內容(content) 的特定狀態所取名的識別名稱，如：  
+## 版本<br>Version
+版本(version)為您對 內容(content) 的特定狀態所取名的識別名稱，如：  
 ![Retext 關於視窗畫面擷取圖案](資源/關於-ReText.png "ReText 關於視窗畫面擷取圖案")
 
 「4.1.2」為 ReText 這個 Markdown 與 reStructuredText 文件編輯器對於該軟體目前的狀態（程式設計、介面設計等）的識別名稱。版本不一定一定要如前例一樣是數字跟英式句點(period)的組合，您如果高興的話也可以把某個內容的特定狀態取名為「黃色小鴨」版或是「逆轟高灰」版，不過大型專案一般會採用「語意化版本編號(Semantic Versioning)」，以 &lt;MAJOR&gt;.&lt;MINOR&gt;.&lt;PATCH&gt; 的格式來取版本號，詳細資訊可以參考其官方網站：
