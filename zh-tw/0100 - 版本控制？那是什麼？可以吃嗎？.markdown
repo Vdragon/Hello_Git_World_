@@ -69,8 +69,7 @@
 
 ![怪我囉](資源/怪我囉.png)
 
-<span style='font-weight: 800; font-size:1000%'>超</span>  
-<span style='font-size:200%'>◢▆▅▄▃崩╰(〒皿〒)╯潰▃▄▅▇◣</span>
+<span style='font-weight: 800; font-size:1000%'>超</span><span style='font-size:200%'>◢▆▅▄▃崩╰(〒皿〒)╯潰▃▄▅▇◣</span>
 
 ## 程式設計師的美德？
 
