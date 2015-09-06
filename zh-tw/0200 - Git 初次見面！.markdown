@@ -73,6 +73,16 @@ $ git help 〈Git 命令名〉
 
 比方說 `$ git help clone` 可以查詢 `clone` Git 命令的使用手冊，其中會有這個命令支援哪些參數以及參數的用途等說明。
 
+### 查看《Pro Git》官方教科書
+[Pro Git](http://git-scm.com/book/zh-tw) 是由 Scott Chacon 和 Ben Straub 所著的 Git 官方教科書。
+
+### 查看[其他學習資源](其他學習資源.markdown)
+
+### 於 [Git.tw Facebook 社團](https://www.facebook.com/groups/git.tw)詢問其他 Git 使用者
+
+### 於 irc.freenode.net IRC 聊天室托管服務的 #git 頻道討論
+安裝一個 IRC 聊天室客戶端，連上 irc.freenode.net 站台再加入 #git 頻道即可參與 Git 相關的線上討論。
+
 ## 初始化必要 Git 設定
 接下來我們要設定一些提交版本前一定要先設定好的東西，請依照指示進行操作。
 
