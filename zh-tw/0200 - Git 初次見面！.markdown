@@ -140,6 +140,9 @@ Initialized empty Git repository in /home/user/workspace/my_content/.git/
 * 已被追蹤版本的檔案(tracked file)
 * 已被追蹤，且有尚未提交至提交準備區域(staging area)的變更的檔案(tracked file with unstaged changes)
 
+![Git Cola 的狀態小工具畫面截圖](資源/git-status-from-Git-Cola.png)
+▲從 [Git Cola](http://git-cola.github.io) Git 前端軟體的狀態小工具看到的狀況
+
 ## 查看目前版本倉庫狀態
 當您的當前工作目錄(current working directory)位於您的內容根目錄底下時，您可以用 `status` Git 命令來察看目前版本倉庫的狀態，使用方式為：
 ```
