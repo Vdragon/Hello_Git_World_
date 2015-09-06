@@ -1,7 +1,7 @@
 # Git 版本控制系統世界哈囉！<br >Hello Git world!
 一個可食用的 Git 版本控制系統教學  
 An edible Git version control system tutorial  
-<https://github.com/Vdragon/Hello_Git_World_>
+<http://vdragon.gitbooks.io/hello_git_world_>
 
 ## 本 GitBook 的智慧財產授權條款<br />Intellectual Property License of This GitBook
 Creative Commons BY-SA 3.0 or later
