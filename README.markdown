@@ -1,5 +1,5 @@
 # Git 版本控制系統世界哈囉！<br >Hello Git world!
-一個可食用的 Git 版本控制系統教學  
+一個可食用的 Git 版本控制系統教材  
 An edible Git version control system tutorial  
 <http://vdragon.gitbooks.io/hello_git_world_>
 
