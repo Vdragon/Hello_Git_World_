@@ -88,8 +88,8 @@
 <span style='font-size:1000%'>懶</span>  
 ![影片對白：「別浪費時間，快來吧」](資源/別浪費時間，快來吧.png)
 
-## 救星：Git - The Stupid Content Tracker（以及其他眾多的版本控制系統，不過我們這本書只有介紹 Git）
-這是由 Linux 作業系統核心的創始人 Linus Torvalds 為這個專案打造的分散式版本控制系統
+## 救星：Git 版本控制系統
+這是由 Linus Torvalds －－[Linux 作業系統核心](http://kernel.org)的創始人為這個該專案打造的非中心式版本控制系統。
 
 ### 好多人在用 Git
 * [Linux 作業系統核心](http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git)
