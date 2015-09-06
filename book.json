@@ -1,5 +1,5 @@
 {
-	"gitbook": ">=2.2.0", 
+	"gitbook": ">=2.3.0", 
 	"title": "Git 版本控制系統世界哈囉！", 
 	"description": "一個可食用的 Git 版本控制系統教材", 
 	"language": "zh-tw"
