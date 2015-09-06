@@ -125,3 +125,20 @@
 #### 再也不用在檔名中說故事
 ![檔名中說故事](資源/檔名中說故事.png)
 
+## 我又不是程式設計師，學習這個又有什麼用？
+版本控制系統並不是只能用在軟體開發上，您可以用來
+
+### 寫書
+現在您正在閱讀的《Git 版本控制系統世界哈囉！》內容正是以 Git 進行版本控制，然後再用 [GitBook](https://www.gitbook.com/) 這個軟體製作成 Web、PDF、Mobi、ePub 格式的電子書。另一個著名的例子是[台北市長候選人柯文哲的市政白皮書](https://www.gitbook.com/book/doctorkowj/kppolicy)一樣也放在 Git 上面。
+
+您可以在這裡看到一些使用 Git 來做版本控制的書籍：
+[Writing - GitHub Showcases](https://github.com/showcases/writing)
+
+### 架網站、部落格
+如果您會基本的 HTML/CSS/Markdown，您可以藉由 [Jekyll](http://jekyllrb.com/) 軟體與 [GitHub Pages](https://pages.github.com/) 等服務[架設網站](https://pages.github.com/)或是[部落格](http://jekyllbootstrap.com/)，例如：
+
+* [fouber/blog](https://github.com/fouber/blog)
+* [About the Programming Historian | Programming Historian](http://programminghistorian.org/)
+* [git-cola: The highly caffeinated Git GUI](http://git-cola.github.io/)
+
+還有更多有趣的應用等著您去發掘，讓我們開始吧！
