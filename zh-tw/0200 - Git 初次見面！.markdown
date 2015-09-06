@@ -13,6 +13,66 @@ $ git-〈Git 命令名稱〉（Git 命令參數）
 
 這兩種下命令的方式的效果是完全等價（相同）的，本文中的內容將會使用 `$ git 〈Git 命令名稱〉` 的格式。
 
+## 尋求幫助？
+開始遇到問題了？Git 有非常多的資源可以幫助您解決問題，例如：
+
+### 以 `help` Git 命令查看常用 Git 命令以及指定 Git 命令的 manpage 格式使用手冊(manual)
+您可以以下列命令察看 Git 最常用的幾個命令：
+`````
+$ git help
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Find by binary search the change that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Forward-port local commits to the updated upstream head
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+
+`````
+
+您可以以下列命令查尋各個 Git 命令的 manpage 格式使用手冊：
+`````
+$ git help 〈Git 命令名〉
+（等價於 $ man git-〈Git 命令名〉）
+`````
+
+比方說 `$ git help clone` 可以查詢 `clone` Git 命令的使用手冊，其中會有這個命令支援哪些參數以及參數的用途等說明。
+
 ## 初始化必要 Git 設定
 接下來我們要設定一些提交版本前一定要先設定好的東西，請依照指示進行操作。
 

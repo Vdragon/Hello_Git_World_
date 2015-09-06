@@ -6,3 +6,4 @@
 	* 由 GitHub 推出的闖關式的 Git 教學（英文）（推荐）
 * [Pro Git](http://git-scm.com/book/zh-tw/)
 	* **官方** Git 介紹書籍（有中文翻譯版本）
+* [gittutorial(7) manpage 格式使用手冊](http://git-scm.com/docs/gittutorial)
