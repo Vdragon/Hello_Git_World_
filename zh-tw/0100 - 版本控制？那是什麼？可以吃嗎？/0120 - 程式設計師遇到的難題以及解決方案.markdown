@@ -1,5 +1,5 @@
 # 程式設計師遇到的難題以及解決方案
-這裡我們用 CrBoy 的《寫程式？那些老師沒教的事》教學簡報來說明版本控制系統如何來解決程式設計師的問題。
+這裡我們引用 [CrBoy 的《寫程式？那些老師沒教的事》簡報](http://www.slideshare.net/taichunmin/ss-16096723)（Creative Commons BY-SA 第 3 版授權）來說明版本控制系統如何來解決程式設計師的問題。
 
 ## 假設您是一個學習程式設計的學生，老師說：「努力是會有回報的！……多寫一個功能加 10 分」
 
@@ -91,27 +91,35 @@
 這是由 Linux 作業系統核心的創始人 Linus Torvalds 為這個專案打造的分散式版本控制系統
 
 ### 好多人在用 Git
-* Linux 作業系統核心
-* Android
-* CakePHP
-* Drupal
-* GIMP
-* jQuery
-* GTK+
-* Qt
-* phpBB
-* Ruby on Rails
-* PostgreSQL
+* [Linux 作業系統核心](http://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git)
+* [Android 作業系統](https://android.googlesource.com/)
+* [CakePHP](https://github.com/cakephp)
+* [Drupal](http://cgit.drupalcode.org/drupal)
+* [GIMP 繪圖軟體](https://git.gnome.org/browse/gimp/)
+* [jQuery](https://github.com/jquery/jquery)
+* [GTK+](https://git.gnome.org/browse/gtk+/)
+* [Qt](http://code.qt.io/cgit/)
+* [phpBB](https://github.com/phpbb/phpbb)
+* [Ruby on Rails](https://github.com/rails/rails)
+* [PostgreSQL](http://git.postgresql.org/gitweb/)
 * （罄竹難書……這用法好像怪怪 der）
-* 以及 Git 自己也是
+* 以及 [Git 自己也是](https://git.kernel.org/cgit/git/git.git/)
 
-## 為什麼要版本控制？
-### 記住孩子的成長過程
-* 每次的更新都知道做了什麼
+### 為什麼要版本控制？
+#### 記住孩子的成長過程
+每次的修改都知道改了什麼東西，以及為何要改這些東西
 
-### 改爛程式不用怕
-### 可以同時新增不同功能，又不互相影響
-### 簡單方便的異地備援（防意外，還可以防小人）
-### 容易分工合作，改爛程式的人還推不掉責任
-### 再也不用在檔名中說故事
+#### 改爛程式不用怕
+超強時光回溯功能，輕鬆回到沒出問題的版本
+
+#### 可以同時新增不同功能，又不互相影響
+再也不用因為老闆的臨時出現讓做到一半的工作前功盡棄
+
+#### 簡單方便的異地備援
+防意外，還可以防小人
+
+#### 容易分工合作，改爛程式的人還推不掉責任
+「你看看你這行把我們的資料庫都砍掉了！（設計對白）」
+
+#### 再也不用在檔名中說故事
 ![檔名中說故事](資源/檔名中說故事.png)
