@@ -1,3 +1,8 @@
 # 其他教學資源
 這麼多人都有作 Git 教學不拿來看看真的是太浪費了！
 
+* [由畢玉泉（小畢／CrBoy）所創作之《寫程式？那些老師沒教的事(Code Smart, Don't Code Hard》簡報](http://www.slideshare.net/taichunmin/ss-16096723)(P.1~99)，前面的引導很經典被多個教材引用。
+* [Code School - Try Git](https://try.github.io/)
+	* 由 GitHub 推出的闖關式的 Git 教學（英文）（推荐）
+* [Pro Git](http://git-scm.com/book/zh-tw/)
+	* **官方** Git 介紹書籍（有中文翻譯版本）
