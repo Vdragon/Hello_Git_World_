@@ -145,7 +145,7 @@ Initialized empty Git repository in /home/user/workspace/my_content/.git/
 #### 版本倉庫(version repository)（位於 `.git/` 目錄內）
 
 #### 版本提交準備區域(staging area)（又稱為 index）（位於 `.git/` 目錄內）
-這是用來準備您要提交的新版本的區域，您要將想要放進此版本提交的內容變更一一放進這裡，最後再將所有在這裡的變更提交到版本倉庫中(version repository)
+這是用來準備您要提交的新版本的區域，您要將想要放進此版本提交的內容變更一一放進這裡，最後再將所有在這裡的變更提交為一個新版本放到版本倉庫中(version repository)
 
 #### 工作目錄(working directory)（位於 `.git/` 目錄外）
 這是讓您編輯內容的區域
