@@ -129,13 +129,13 @@ $ git config --global user.name "Ｖ字龍(Vdragon Taiwan)"
 $ git config --global user.email Vdragon.Taiwan@gmail.com
 ```
 
-## 初始化 Git 版本倉庫(version repository)
-現在我們已經準備好把版本倉庫(version repository)建起來了，請開啟一個終端機(terminal)，然後將當前工作目錄(current working directory)切換到您想要進行版本控制的內容(content)的根目錄（我們這裡假定是 `/home/user/workspace/my_content`），然後執行下列命令：
+## 初始化 Git 版本倉庫<br />Initialize Git version repository
+現在我們要使用 `init` Git 命令將版本倉庫(version repository)初始化，請開啟一個終端機(terminal)，然後將當前工作目錄(current working directory(C.W.D.))切換到您想要進行版本控制的內容(content)的根目錄（我們這裡假定是 `/home/user/workspace/my_content`），然後執行下列命令：
 `````
 /home/user/workspace/my_content $ git init
 Initialized empty Git repository in /home/user/workspace/my_content/.git/
 `````
-輸出訊息會告訴您它於您的內容(content)的根目錄底下的 `.git` 目錄初始化了一個空的 Git 版本倉庫
+`init` Git 命令的輸出訊息會告訴您它於您的內容(content)的根目錄底下的 `.git` 目錄初始化了一個空的 Git 版本倉庫。
 
 要注意的是於類 Unix 作業系統中以英式句點(.)開頭的目錄或檔案皆為*隱藏檔*，如果您沒有發現 `.git` 目錄的存在的話請調整您的檔案管理軟體的設定值讓它顯示隱藏檔。
 
