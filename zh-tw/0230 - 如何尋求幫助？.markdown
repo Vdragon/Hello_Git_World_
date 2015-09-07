@@ -1,0 +1,21 @@
+# 如何尋求幫助？<br />Seeking for help?
+開始遇到一些問題了嗎？Git 有非常多的資源可以幫助您解決問題，例如：
+
+## 以 `help` Git 命令查看指定 Git 命令的使用手冊
+您可以以下列命令查閱各個 Git 命令的使用手冊：
+`````
+$ git help 〈Git 命令名〉
+（等價於 $ man git-〈Git 命令名〉）
+`````
+
+比方說 `$ git help clone` 或是 `$ man git-clone` 可以查閱 `clone` Git 命令的使用手冊，其中會有這個命令支援哪些參數以及參數的用途等說明。
+
+## 查看《Pro Git》官方教科書
+[Pro Git](http://git-scm.com/book/zh-tw) 是由 Scott Chacon 和 Ben Straub 所著的 Git 官方教科書。
+
+## 查看[其他的 Git 學習資源](其他學習資源.markdown)
+
+## 於 [Git.tw Facebook 社團](https://www.facebook.com/groups/git.tw)詢問其他 Git 使用者
+
+## 於 irc.freenode.net IRC 聊天室托管服務的 #git 頻道討論
+安裝一個 IRC 聊天室客戶端，連上 irc.freenode.net 站台再加入 #git 頻道即可參與 Git 相關的線上討論。

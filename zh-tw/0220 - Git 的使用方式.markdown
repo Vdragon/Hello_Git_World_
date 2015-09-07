@@ -1,0 +1,15 @@
+# Git 的使用方式
+## Git 命令<br>Git commands
+Git 版本控制系統由多個大部份都在命令列介面底下執行的「Git 命令」組成，執行 Git 命令的方式為：
+```
+$ git 〈Git 命令名稱〉 （Git 命令參數）
+```
+例： `$ git help`  
+
+## Git 圖形介面前端<br />Git GUI frontends
+除了 Git 命令以外也第三方開發圖形介面的 Git 版本控制系統前端(frontend)軟體，讓您在不使用 Git 命令的狀況下仍能完成大多數的 Git 操作，例如：
+
+* [Git Cola](http://git-cola.github.io/)
+![Git Cola 畫面擷取圖案](資源/Git-Cola.png)
+
+於本教材中我們將**以命令列介面的操作為主**，然後再以圖形介面前端來輔助讀者理解。

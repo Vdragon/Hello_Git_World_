@@ -1,0 +1,22 @@
+# 查看版本提交紀錄
+您可以用 `log` Git 命令查看您先前所提交的所有版本，例如：
+`````
+$ git log
+commit 121598ded0d8680e91a758773ff55972b833c422
+Author: Ｖ字龍(Vdragon) <Vdragon.Taiwan@gmail.com>
+Date:   Mon Sep 7 14:19:07 2015 +0800
+
+    Git LV.1 - 改善 `commit` 命令說明
+    
+    Signed-off-by: Ｖ字龍(Vdragon) <Vdragon.Taiwan@gmail.com>
+
+commit 76e8461e0f4a59d2f14a4941d706911b0966fa2c
+Author: Ｖ字龍(Vdragon) <Vdragon.Taiwan@gmail.com>
+Date:   Mon Sep 7 13:27:50 2015 +0800
+
+    Git LV.1 - 改善 git commit 說明
+    
+    Signed-off-by: Ｖ字龍(Vdragon) <Vdragon.Taiwan@gmail.com>
+
+`````
+方便您了解過去到底做了什麼事情。

@@ -1,0 +1,22 @@
+# 將內容移入版本提交準備區域(staging area)
+您可以使用 `add` Git 命令將指定檔案／目錄的內容變更移入版本提交準備區域，使用方法如下：
+`````
+$ git add 〈包含內容變更的檔案／目錄路徑〉
+`````
+
+此時您若執行 `git status` 命令會發現類似下列的訊息：
+```
+On branch 主要開發分支(master)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   〈內容變更移入版本提交準備區域(staging area)的項目路徑〉
+
+```
+
+告訴您現在版本提交準備區域(staging area)內有內容變更等著被提交為新版本，另外您可以用 `git reset HEAD 〈檔案路徑〉` 命令將該內容變更移出版本提交準備區域(staging area)，我們之後會詳細說明該 `reset` Git 命令到底在做什麼事情。
+
+### （實用）僅將檔案*部份*內容變更移入版本提交準備區域(staging area)
+有的時候會遇到「您對同一個檔案做了許多變更，但是有一些變更您不想要放進同一個版本」的狀況，這個時候您可以使用 `--patch` `add` Git 命令參數以互動式的方式來指定哪些變更要移進版本提交準備區域(staging area)，而哪些變更不要。
+
+（詳細流程待補）
