@@ -4,7 +4,7 @@ Git 版本控制系統由多個大部份都在命令列介面底下執行的「G
 ```
 $ git 〈Git 命令名稱〉 （Git 命令參數）
 ```
-例： `$ git help`  
+例： `$ git help init`  
 
 ## Git 圖形介面前端<br />Git GUI frontends
 除了 Git 命令以外也第三方開發圖形介面的 Git 版本控制系統前端(frontend)軟體，讓您在不使用 Git 命令的狀況下仍能完成大多數的 Git 操作，例如：
