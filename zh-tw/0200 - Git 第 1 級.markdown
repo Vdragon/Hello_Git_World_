@@ -164,6 +164,18 @@ $ git status
 $ git add 〈包含內容變更的檔案／目錄路徑〉
 `````
 
+此時您若執行 `git status` 命令會發現類似下列的訊息：
+```
+On branch 主要開發分支(master)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   〈內容變更移入版本提交準備區域(staging area)的項目路徑〉
+
+```
+
+告訴您現在版本提交準備區域(staging area)內有內容變更等著被提交為新版本，另外您可以用 `git reset HEAD 〈檔案路徑〉` 命令將該內容變更移出版本提交準備區域(staging area)，我們之後會詳細說明該 `reset` Git 命令到底在做什麼事情。
+
 ### （實用）僅將檔案*部份*內容變更移入版本提交準備區域(staging area)
 有的時候會遇到「您對同一個檔案做了許多變更，但是有一些變更您不想要放進同一個版本」的狀況，這個時候您可以使用 `--patch` `add` Git 命令參數以互動式的方式來指定哪些變更要移進版本提交準備區域(staging area)，而哪些變更不要。
 
@@ -177,6 +189,14 @@ $ git commit
 
 Git 會啟動一個純文字文件編輯器讓您輸入該版本提交的標題與詳細資料，當您存檔並結束純文字編輯器後一個新的版本就成功地提交到版本倉庫中了！
 
+您會看到 `commit` Git 命令會輸出像是下列的訊息：
+`````
+[master 121598d] 〈版本提交標題〉
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+`````
+「121598d」為剛提交的版本的 SHA-1 雜湊(hash)編號的前 7 位，每個版本都會用它的內容算出獨一無二的 4? 位元 SHA-1 雜湊(hash)，我們之後會用它來表示這個版本
+
 ### 為版本提交署名(Sign off)
 `commit` Git 命令有一個特別的參數叫作「署名(sign off)」，使用方式如下：
 `````
@@ -184,6 +204,82 @@ $ git commit --signoff
 `````
 
 您會發現新版本提交的詳細資料區域中會多出一列「Signed-off-by: 〈您的稱謂〉 &lt;〈您的電子郵件信箱地址〉&gt;」，它的用途基本上是要您宣示您所提交的變更完全合法，不會對軟體專案造成損害（比方說將未經過授權的專有程式片段加到別人的程式中對他人造成法律威脅），有些軟體專案會只引入有「Signed-off-by: 」列的版本提交。
+
+## 查看目前的版本提交紀錄
+您可以用 `log` Git 命令查看您先前所提交的所有版本，例如：
+`````
+$ git log
+commit 121598ded0d8680e91a758773ff55972b833c422
+Author: Ｖ字龍(Vdragon) <Vdragon.Taiwan@gmail.com>
+Date:   Mon Sep 7 14:19:07 2015 +0800
+
+    Git LV.1 - 改善 `commit` 命令說明
+    
+    Signed-off-by: Ｖ字龍(Vdragon) <Vdragon.Taiwan@gmail.com>
+
+commit 76e8461e0f4a59d2f14a4941d706911b0966fa2c
+Author: Ｖ字龍(Vdragon) <Vdragon.Taiwan@gmail.com>
+Date:   Mon Sep 7 13:27:50 2015 +0800
+
+    Git LV.1 - 改善 git commit 說明
+    
+    Signed-off-by: Ｖ字龍(Vdragon) <Vdragon.Taiwan@gmail.com>
+
+`````
+方便您了解過去到底做了什麼事情。
+
+## 已追蹤(tracked)項目 V.S. 未追蹤(untracked)項目
+有提交變更到版本倉庫中的項目會被 Git 版本控制系統追蹤(track)它的變動，如果您再一次修改該項目的話下一次執行 `status` Git 命令就會顯示如下：
+
+`````
+$ git status 
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   〈被修改的項目名稱〉
+`````
+
+版本控制系統尚未追蹤變更的項目則會顯示為 untracked files（尚未被追蹤的檔案）：
+`````
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        〈沒被版本控制系統追蹤的項目〉
+
+`````
+
+`status` Git 命令會貼心地提示您此時可以採取的操作。
+
+## 察看兩區域間的內容差異
+您可以使用 `diff` Git 命令來查看版本控制系統中任兩個區域的內容到底有哪些不同，以下舉幾個常用的例子。
+
+### 察看目前版本與工作目錄間的內容差異
+執行 `git diff` 即可查看目前工作目錄中的內容與版本倉庫中的最新版本有哪些不一樣，例如：
+
+`````
+diff --git a/zh-tw/0200 - Git 第 1 級.markdown b/zh-tw/0200 - Git 第 1 級.markdown
+index a66f34b..abe3b9f 100644
+--- a/zh-tw/0200 - Git 第 1 級.markdown 
++++ b/zh-tw/0200 - Git 第 1 級.markdown 
+@@ -175,7 +175,7 @@ $ git add 〈包含內容變更的檔案／目錄路徑〉
+ $ git commit
+ `````
+ 
+-Git 會啟動一個純文字文件編輯器讓您輸入該版本提交的標題與詳細資料，當您存檔並結束純文字編輯
+器後一個新的版本就提交到版本倉庫中了！
++Git 會啟動一個純文字文件編輯器讓您輸入該版本提交的標題與詳細資料，當您存檔並結束純文字編輯
+器後一個新的版本就成功地提交到版本倉庫中了！
+
+ ### 為版本提交署名(Sign off)
+ `commit` Git 命令有一個特別的參數叫作「署名(sign off)」，使用方式如下：
+
+`````
+我在「Git 會啟動……」句中多加了「成功地」三個字
+
+### 察看目前版本與版本提交準備區域(staging area)的內容差異
+執行 `git diff --cached` 即可查看目前版本提交準備區域(staging area)中的內容與版本倉庫中的最新版本有哪些不一樣
 
 ## 結語
 看完這一章之後，您應該可以開始提交您的內容的新的版本到版本倉庫中，我們接下來會介紹如何建立遠端的 Git 版本倉庫、如何將本地版本倉庫的版本推送(push)到遠端版本倉庫中、如何將遠端版本倉庫克隆(clone)一份到本地端、如何在跟別人一起合作的同時解決偶爾會發生的版本衝突(conflict)的問題。
