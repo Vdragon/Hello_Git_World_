@@ -4,7 +4,7 @@
 1. [基本版本控制系統概念介紹](0140 - 基本版本控制系統概念介紹.markdown)
 1. [Git 第 1 級](0200 - Git 第 1 級.markdown)
 	1. [安裝 Git](0210 - 安裝 Git.markdown)
-	1. [Git 的使用方式](0220 - Git 的使用方式.markdown)
+	1. [Git 的操作模式](0220 - Git 的操作模式.markdown)
 	1. [如何尋求幫助？](0230 - 如何尋求幫助？.markdown)
 	1. [初始化必要的 Git 設定值](0240 - 初始化必要的 Git 設定值.markdown)
 	1. [初始化 Git 版本倉庫](0250 - 初始化 Git 版本倉庫.markdown)
