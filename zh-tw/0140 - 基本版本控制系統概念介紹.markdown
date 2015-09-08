@@ -67,3 +67,18 @@
 
 ## 版本倉庫(version repository)
 顧名思義，版本倉庫就是保存所有版本的場所，只要沒有動到版本倉庫您過去提交進版本倉庫的版本就不會不見。
+
+## 提交(commit)<sup><i>動詞(verb)</i></sup>
+將新版本保存入版本倉庫的動作我們稱為提交(commit)
+
+### 例句
+* 新版本**已經被提交**到版本倉庫(repository)中。  
+  The new version **is being committed** to the repository.
+
+## 版本提交(commit)<sup><i>名詞(noun)</i></sup>
+我們將提交進去版本倉庫中的版本本身也稱作「commit」，這邊翻譯為「版本提交」。讀者應分辨 commit 動詞型式跟名詞型式的差異。
+
+### 例句
+* 目前版本倉庫中有 1038 個**版本提交**。
+  Currently there are 1038 **commits** inthe repository.
+
