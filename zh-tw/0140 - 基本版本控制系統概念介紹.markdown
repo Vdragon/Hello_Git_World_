@@ -80,5 +80,5 @@
 
 ### 例句
 * 目前版本倉庫中有 1038 個**版本提交**。
-  Currently there are 1038 **commits** inthe repository.
+  Currently there are 1038 **commits** in the repository.
 
