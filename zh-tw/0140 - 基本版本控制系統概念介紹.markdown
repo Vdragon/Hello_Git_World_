@@ -2,6 +2,28 @@
 ## 內容(content)
 顧名思義，內容就是您的某個工作的內容（如果是軟體開發的話就是軟體的來源程式碼(source code)，如果是寫一本書的話就是書的內容）。
 
+有些內容適合做版本控制，有的內容則不太適合：
+
+### 適合作版本控制的內容 - 純文字格式的文件
+* plaintext
+* Markdown
+* SVG
+* HTML
+* CSS
+* XML
+* YAML
+* JSON
+* 來源程式碼(source code)
+
+### 不太適合做版本控制的內容 - 非純文字格式（二進位格式）的文件
+* JPEG
+* PNG
+* AVI
+* MPEG
+* DOCX
+* PPTX
+* XSLX
+
 ## 版本(version)
 版本(version)為您對 內容(content) 的特定狀態所取名的識別名稱，如：  
 ![Retext 關於視窗畫面擷取圖案](資源/關於-ReText.png "ReText 關於視窗畫面擷取圖案")
